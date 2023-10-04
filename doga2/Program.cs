@@ -33,7 +33,8 @@ class Program
     {
         //EgyNegy();
         //Ot();
-        Hat();
+        //Hat();
+        Het();
         Wait();
     }
 
@@ -176,13 +177,7 @@ class Program
         C(arr);
     }
 
-    
-
     static void Hat(){
-        /*
-        Készítsünk programot, amely kiszámolja a/b+c/d (két tört összegét), majd az eredmény törzsalakú törté alakítja (amely már nem egyszerűsíthető tovább). Figyelj arra, hogy a tört nevezője, nem lehet 0.
-        Példa: a = 2, b = 5, c = 8 , d = 5 eredmény : 2 (10/5)
-    */
 
         int a, b, c, d;
         Print("a: ");
@@ -201,5 +196,22 @@ class Program
             int f = b * d;
             Print("Eredmény: " + e + "/" + f + "\n");
         }
+    }
+    
+    static void Het(){
+        int num;
+        do{
+            Print("Kérek egy páros számot: ");
+            num = GetInt();
+        }while(num = 0 || num % 2 != 0);
+    }
+
+    static void Nyolc(){
+        int num;
+        do{
+            Print("Kérek egy pozitív számot: ");
+            num = GetInt();
+        }while(num < 0);
+        Print("Maradék: " + num % 5 + "\n");
     }
 }
