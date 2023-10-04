@@ -31,10 +31,11 @@ class Program
 
     static void Main(string[] args)
     {
-        //EgyNegy();
-        //Ot();
-        //Hat();
+        EgyNegy();
+        Ot();
+        Hat();
         Het();
+        Nyolc();
         Wait();
     }
 
@@ -203,7 +204,7 @@ class Program
         do{
             Print("Kérek egy páros számot: ");
             num = GetInt();
-        }while(num = 0 || num % 2 != 0);
+        }while(num % 2 != 0);
     }
 
     static void Nyolc(){
